@@ -17,18 +17,108 @@
             text-align: center;
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            animation: gradientBG 15s ease infinite;
+            overflow: hidden;
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            perspective: 500px;
+        }
+
+        .wrapper i {
+            display: block;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            opacity: 0;
+            background: rgba(255,255,255,0.5);
+            box-shadow: 0px 0px 10px rgba(255,255,255,1);
+            animation-name: spin;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        /* Generated particle styles */
+        .wrapper i:nth-child(1) { transform: rotate(11.61deg) translate3d(80px, 0, 0); animation-delay: 0.0484s; }
+        .wrapper i:nth-child(2) { transform: rotate(23.23deg) translate3d(80px, 0, 0); animation-delay: 0.0968s; }
+        .wrapper i:nth-child(3) { transform: rotate(34.84deg) translate3d(80px, 0, 0); animation-delay: 0.1452s; }
+        .wrapper i:nth-child(4) { transform: rotate(46.45deg) translate3d(80px, 0, 0); animation-delay: 0.1935s; }
+        .wrapper i:nth-child(5) { transform: rotate(58.06deg) translate3d(80px, 0, 0); animation-delay: 0.2419s; }
+        .wrapper i:nth-child(6) { transform: rotate(69.68deg) translate3d(80px, 0, 0); animation-delay: 0.2903s; }
+        .wrapper i:nth-child(7) { transform: rotate(81.29deg) translate3d(80px, 0, 0); animation-delay: 0.3387s; }
+        .wrapper i:nth-child(8) { transform: rotate(92.90deg) translate3d(80px, 0, 0); animation-delay: 0.3871s; }
+        .wrapper i:nth-child(9) { transform: rotate(104.52deg) translate3d(80px, 0, 0); animation-delay: 0.4355s; }
+        .wrapper i:nth-child(10) { transform: rotate(116.13deg) translate3d(80px, 0, 0); animation-delay: 0.4839s; }
+        .wrapper i:nth-child(11) { transform: rotate(127.74deg) translate3d(80px, 0, 0); animation-delay: 0.5323s; }
+        .wrapper i:nth-child(12) { transform: rotate(139.35deg) translate3d(80px, 0, 0); animation-delay: 0.5806s; }
+        .wrapper i:nth-child(13) { transform: rotate(150.97deg) translate3d(80px, 0, 0); animation-delay: 0.6290s; }
+        .wrapper i:nth-child(14) { transform: rotate(162.58deg) translate3d(80px, 0, 0); animation-delay: 0.6774s; }
+        .wrapper i:nth-child(15) { transform: rotate(174.19deg) translate3d(80px, 0, 0); animation-delay: 0.7258s; }
+        .wrapper i:nth-child(16) { transform: rotate(185.81deg) translate3d(80px, 0, 0); animation-delay: 0.7742s; }
+        .wrapper i:nth-child(17) { transform: rotate(197.42deg) translate3d(80px, 0, 0); animation-delay: 0.8226s; }
+        .wrapper i:nth-child(18) { transform: rotate(209.03deg) translate3d(80px, 0, 0); animation-delay: 0.8710s; }
+        .wrapper i:nth-child(19) { transform: rotate(220.65deg) translate3d(80px, 0, 0); animation-delay: 0.9194s; }
+        .wrapper i:nth-child(20) { transform: rotate(232.26deg) translate3d(80px, 0, 0); animation-delay: 0.9677s; }
+        .wrapper i:nth-child(21) { transform: rotate(243.87deg) translate3d(80px, 0, 0); animation-delay: 1.0161s; }
+        .wrapper i:nth-child(22) { transform: rotate(255.48deg) translate3d(80px, 0, 0); animation-delay: 1.0645s; }
+        .wrapper i:nth-child(23) { transform: rotate(267.10deg) translate3d(80px, 0, 0); animation-delay: 1.1129s; }
+        .wrapper i:nth-child(24) { transform: rotate(278.71deg) translate3d(80px, 0, 0); animation-delay: 1.1613s; }
+        .wrapper i:nth-child(25) { transform: rotate(290.32deg) translate3d(80px, 0, 0); animation-delay: 1.2097s; }
+        .wrapper i:nth-child(26) { transform: rotate(301.94deg) translate3d(80px, 0, 0); animation-delay: 1.2581s; }
+        .wrapper i:nth-child(27) { transform: rotate(313.55deg) translate3d(80px, 0, 0); animation-delay: 1.3065s; }
+        .wrapper i:nth-child(28) { transform: rotate(325.16deg) translate3d(80px, 0, 0); animation-delay: 1.3548s; }
+        .wrapper i:nth-child(29) { transform: rotate(336.77deg) translate3d(80px, 0, 0); animation-delay: 1.4032s; }
+        .wrapper i:nth-child(30) { transform: rotate(348.39deg) translate3d(80px, 0, 0); animation-delay: 1.4516s; }
+        .wrapper i:nth-child(31) { transform: rotate(360.00deg) translate3d(80px, 0, 0); animation-delay: 1.5000s; }
+        .wrapper i:nth-child(32) { transform: rotate(371.61deg) translate3d(80px, 0, 0); animation-delay: 1.5484s; }
+        .wrapper i:nth-child(33) { transform: rotate(383.23deg) translate3d(80px, 0, 0); animation-delay: 1.5968s; }
+        .wrapper i:nth-child(34) { transform: rotate(394.84deg) translate3d(80px, 0, 0); animation-delay: 1.6452s; }
+        .wrapper i:nth-child(35) { transform: rotate(406.45deg) translate3d(80px, 0, 0); animation-delay: 1.6935s; }
+        .wrapper i:nth-child(36) { transform: rotate(418.06deg) translate3d(80px, 0, 0); animation-delay: 1.7419s; }
+        .wrapper i:nth-child(37) { transform: rotate(429.68deg) translate3d(80px, 0, 0); animation-delay: 1.7903s; }
+        .wrapper i:nth-child(38) { transform: rotate(441.29deg) translate3d(80px, 0, 0); animation-delay: 1.8387s; }
+        .wrapper i:nth-child(39) { transform: rotate(452.90deg) translate3d(80px, 0, 0); animation-delay: 1.8871s; }
+        .wrapper i:nth-child(40) { transform: rotate(464.52deg) translate3d(80px, 0, 0); animation-delay: 1.9355s; }
+        .wrapper i:nth-child(41) { transform: rotate(476.13deg) translate3d(80px, 0, 0); animation-delay: 1.9839s; }
+        .wrapper i:nth-child(42) { transform: rotate(487.74deg) translate3d(80px, 0, 0); animation-delay: 2.0323s; }
+        .wrapper i:nth-child(43) { transform: rotate(499.35deg) translate3d(80px, 0, 0); animation-delay: 2.0806s; }
+        .wrapper i:nth-child(44) { transform: rotate(510.97deg) translate3d(80px, 0, 0); animation-delay: 2.1290s; }
+        .wrapper i:nth-child(45) { transform: rotate(522.58deg) translate3d(80px, 0, 0); animation-delay: 2.1774s; }
+        .wrapper i:nth-child(46) { transform: rotate(534.19deg) translate3d(80px, 0, 0); animation-delay: 2.2258s; }
+        .wrapper i:nth-child(47) { transform: rotate(545.81deg) translate3d(80px, 0, 0); animation-delay: 2.2742s; }
+        .wrapper i:nth-child(48) { transform: rotate(557.42deg) translate3d(80px, 0, 0); animation-delay: 2.3226s; }
+        .wrapper i:nth-child(49) { transform: rotate(569.03deg) translate3d(80px, 0, 0); animation-delay: 2.3710s; }
+        .wrapper i:nth-child(50) { transform: rotate(580.65deg) translate3d(80px, 0, 0); animation-delay: 2.4194s; }
+        .wrapper i:nth-child(51) { transform: rotate(592.26deg) translate3d(80px, 0, 0); animation-delay: 2.4677s; }
+        .wrapper i:nth-child(52) { transform: rotate(603.87deg) translate3d(80px, 0, 0); animation-delay: 2.5161s; }
+        .wrapper i:nth-child(53) { transform: rotate(615.48deg) translate3d(80px, 0, 0); animation-delay: 2.5645s; }
+        .wrapper i:nth-child(54) { transform: rotate(627.10deg) translate3d(80px, 0, 0); animation-delay: 2.6129s; }
+        .wrapper i:nth-child(55) { transform: rotate(638.71deg) translate3d(80px, 0, 0); animation-delay: 2.6613s; }
+        .wrapper i:nth-child(56) { transform: rotate(650.32deg) translate3d(80px, 0, 0); animation-delay: 2.7097s; }
+        .wrapper i:nth-child(57) { transform: rotate(661.94deg) translate3d(80px, 0, 0); animation-delay: 2.7581s; }
+        .wrapper i:nth-child(58) { transform: rotate(673.55deg) translate3d(80px, 0, 0); animation-delay: 2.8065s; }
+        .wrapper i:nth-child(59) { transform: rotate(685.16deg) translate3d(80px, 0, 0); animation-delay: 2.8548s; }
+        .wrapper i:nth-child(60) { transform: rotate(696.77deg) translate3d(80px, 0, 0); animation-delay: 2.9032s; }
+        .wrapper i:nth-child(61) { transform: rotate(708.39deg) translate3d(80px, 0, 0); animation-delay: 2.9516s; }
+        .wrapper i:nth-child(62) { transform: rotate(720.00deg) translate3d(80px, 0, 0); animation-delay: 3.0000s; }
+
+        @keyframes spin {
+            from { opacity: 0.0; }
+            to {
+                opacity: 0.6;
+                transform: translate3d(-4px, -4px, 570px);
             }
         }
 
@@ -42,8 +132,8 @@
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 15px;
-            padding: 20px 40px;
-            font-size: 24px;
+            padding: 25px 50px; /* Kept the larger size */
+            font-size: 28px; /* Kept the larger size */
             color: white;
             text-decoration: none;
             backdrop-filter: blur(10px);
@@ -51,6 +141,7 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             transition: all 0.3s ease;
             cursor: pointer;
+            font-weight: 600;
         }
 
         .button:hover {
@@ -64,12 +155,33 @@
         }
         
         window.onload = function() {
-            // We can still attempt an automatic redirect, but the button is there as a fallback.
-            setTimeout(redirect, 2000); // Optional: uncomment for automatic redirect after 1s
+            const wrapper = document.querySelector('.wrapper');
+            const container = document.querySelector('.container');
+
+            // Hide button container initially
+            if (container) {
+                container.style.display = 'none';
+            }
+
+            // Attempt redirect after a short delay
+            setTimeout(redirect, 1500);
+
+            // After 5 seconds, if still here, show the button
+            setTimeout(() => {
+                if (wrapper) {
+                    wrapper.style.display = 'none';
+                }
+                if (container) {
+                    container.style.display = 'flex';
+                }
+            }, 5000);
         };
     </script>
 </head>
 <body>
+    <div class="wrapper">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
     <div class="container">
         <button class="button" onclick="redirect()">Take Me &rarr;</button>
     </div>
